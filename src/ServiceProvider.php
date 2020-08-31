@@ -27,5 +27,6 @@ class ServiceProvider extends AddonServiceProvider
         $this->publishes([
             __DIR__.'../config/events.php' => config_path('events.php'),
         ]);
+        return $this;
     }
 }
