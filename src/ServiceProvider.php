@@ -22,7 +22,7 @@ class ServiceProvider extends AddonServiceProvider
         $this->bootConfig();
     }
 
-    private function bootConfig()
+    protected function bootConfig()
     {
         $this->publishes([
             __DIR__.'../config/events.php' => config_path('events.php'),
